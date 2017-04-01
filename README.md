@@ -2,13 +2,12 @@
 Arduino ODBII & ELM327 Emulator - <br> 
 Allows Arduino to act as a ECU and a OBD2 ELM327 device and response to PID requests, from any given ODBII app (ex: android::torque).
 
-This library can be used to read values from real sensor's with arduino and visualized them in any OBDII client App, </br>
-  or it can be used as an emulator, when developing OBDII client App's over ELM327 chip's.
+This library can be used to read values from real sensor's with arduino and visualized them in any OBDII client App, 
+or it can be used as an emulator to help developing OBDII client App's over ELM327 chip's.
 
-GTTurboEcu implements the specification's of the ELM327 chip set.</br>
+GTTurboEcu implements the specification's of the ELM327 chip.</br>
 
- It was only tested with Torque,
-But in theory it should work OK,  with any OBDII client App that can communicate with a real ELM327 chip.
+It was only tested with Torque, but in theory it should work OK,  with any OBDII client App that can communicate with a ELM327 chip.
 
 ELM327 specifications: </br>
 https://www.elmelectronics.com/wp-content/uploads/2016/07/ELM327DS.pdf
@@ -138,8 +137,26 @@ void loop() {
 # Example ino file with dummy values for sensors 
 For a quick test, there's a ino file in examples/DataSimulator directory. This is a running example with some PID's and some fake data values.
 
+Youtube video:
+https://youtu.be/ACYquj39CmI
+
+    # Requisites:
+    - Arduino Uno
+    - Bluetooth Shield
+    - GTTurboEcu library
+    
 # Motivation
 Has a fan of classic car's and owner of some, I need to read some performance values without changing the interior dash by setting gauges or arduino displays.</br>
      Since I was unable to find an ELM327 arduino implementation, decided to make my own and share it with all classic cars enthusiast.
      
-     
+
+# License
+
+
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+
+Copyright (c) 2017 . All right reserved.
