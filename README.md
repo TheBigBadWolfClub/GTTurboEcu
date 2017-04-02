@@ -2,7 +2,7 @@
 Arduino ODBII & ELM327 Emulator - <br> 
 Allows Arduino to act as a ECU and a OBD2 ELM327 device and response to PID requests, from any given ODBII app (ex: android::torque).
 
-This library can be used to read values from real sensor's with arduino and visualized them in any OBDII client App, 
+This library can be used to read values from real sensor's with arduino and visualize them in any OBDII client App, 
 or it can be used as an emulator to help developing OBDII client App's over ELM327 chip's.
 
 GTTurboEcu implements the specification's of the ELM327 chip.</br>
@@ -40,8 +40,8 @@ GTTurboEcu gtTurboEcu(9600L, 11, 10);
 
 void setup() {
 
-    // init serial communication, 
-    Serial.begin(9600);
+    // init serial communication, is only need if theres a need to read the debug info on serial port of the arduino
+    // Serial.begin(9600);
 
 
     /**

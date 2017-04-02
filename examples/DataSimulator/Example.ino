@@ -25,7 +25,8 @@ uint32_t FakeSensorValueProvider();
 
 void setup() {
 
-    // ???? init serial communication
+    // init serial communication, is only need if there's a need
+    //  to read the debug info on serial port of the arduino
     Serial.begin(9600);
 
 
